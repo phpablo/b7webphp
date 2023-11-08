@@ -7,7 +7,10 @@ $ingredientes = [
   'leite',
   'fermento em pó'
 ];
-
-foreach ($ingredientes as $ingredientes) {
-  echo 'Item: ' . $ingredientes . '<br/>';
+?>
+<ul></ul>
+<?php 
+foreach ($ingredientes as $chave => $valor) {
+  echo '<li>Item' . $chave . ':' . $valor . '<li/><br/>';
 };
+?>
