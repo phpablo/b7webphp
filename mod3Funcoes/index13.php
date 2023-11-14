@@ -118,6 +118,7 @@
   print_r($numeros);
 
   echo "<hr/>";
+  echo "<hr/>";
 
 
   ?>
