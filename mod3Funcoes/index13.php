@@ -118,8 +118,10 @@
   print_r($numeros);
 
   echo "<hr/>";
-  echo "<hr/>";
-  echo "Corrigindo um Bug";
+  echo '<strong>Função para juntar cada indice em uma string</strong></br></br>';
+  $nomes = ['Pablo', 'Henrique', 'Araújo'];
+  $nome = implode(' ', $nomes);
+  echo $nome;
 
 
   ?>
