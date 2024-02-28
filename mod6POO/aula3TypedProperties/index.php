@@ -1,9 +1,9 @@
 <?php
 // classe com atributos de um post 
 class Post { // Aqui é uma classe
-  public $likes = 0;
-  public $comments = [];
-  public $author;
+  public int $likes = 0; // int = agora só recebe tipo INT
+  public array $comments = []; // ARRAY = agora só recebe tipo ARRAY
+  public string $author; // STRING = agora só recebe tipo STRING, mas se digitar '10', ele recebe, mas como string 
 
   public function aumentarLikes() {
     return $this->likes++;
