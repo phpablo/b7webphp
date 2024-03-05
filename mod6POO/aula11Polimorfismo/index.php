@@ -1,0 +1,3 @@
+<?php
+class MysqlDB {
+}
