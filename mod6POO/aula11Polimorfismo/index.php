@@ -1,6 +1,7 @@
 <?php
-class MysqlDB {
-    public function (){
 
+class MysqlDB {
+    function getArrow($num1) {
+        return $num1 = +$num1;
     }
 }
