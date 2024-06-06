@@ -7,7 +7,22 @@ use \core\Controller;
 class HomeController extends Controller {
 
     public function index() {
-        $this->render('home');
+        $nome = 'Jão';
+        $idade = '94';
+
+        $posts = [
+            ['Titulo' => 'Titulo de Teste 1', 'Corpo' => 'Corpo de Teste 1'],
+            ['Titulo' => 'Titulo de Teste 2', 'Corpo' => 'Corpo de Teste 2'],
+            ['Titulo' => 'Titulo de Teste 3', 'Corpo' => 'Corpo de Teste 3'],
+            ['Titulo' => 'Titulo de Teste 4', 'Corpo' => 'Corpo de Teste 4'],
+            ['Titulo' => 'Titulo de Teste 5', 'Corpo' => 'Corpo de Teste 5'],
+        ];
+
+        $this->render('home', [
+            'nome'  => $nome,
+            'idade' => $idade,
+            'posts' => $posts
+        ]);
     }
 
     public function sobre() {
@@ -19,6 +34,10 @@ class HomeController extends Controller {
     }
 
     public function fotos() {
-        echo 'Opa! Fotos:';
+        $this->render('fotos');
+    }
+
+    public function foto($param) {
+        echo 'Acessando a foto ' . $param['id'] . ' aqui!';
     }
 }
