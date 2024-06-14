@@ -1,6 +1,6 @@
 <?php $render('header'); ?>
 
-<?php echo 'Meu nome é ' . $nome . ' e tenho ' . $idade . ' anos.' ?>
+<?php echo 'Eu sou ' . $profissao . ' Meu nome é ' . $nome . ' e tenho ' . $idade . ' anos.' ?>
 
 <hr>
 

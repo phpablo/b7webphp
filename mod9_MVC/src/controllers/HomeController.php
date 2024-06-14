@@ -9,6 +9,7 @@ class HomeController extends Controller {
     public function index() {
         $nome = 'Jão';
         $idade = '94';
+        $profissao = 'Engenheiro de Software';
 
         $posts = [
             ['Titulo' => 'Titulo de Teste 1', 'Corpo' => 'Corpo de Teste 1'],
@@ -21,6 +22,7 @@ class HomeController extends Controller {
         $this->render('home', [
             'nome'  => $nome,
             'idade' => $idade,
+            'profissao' => $profissao,
             'posts' => $posts
         ]);
     }
