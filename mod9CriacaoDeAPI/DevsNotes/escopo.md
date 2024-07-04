@@ -17,8 +17,8 @@
 
 # Quais os endpoints ?
 
-  -> (GET) /api/notes
-  -> (GET) /api/note/123
-  -> (POST) /api/note (Title, Body)
-  -> (PUT) /api/note/123 (Title, Body)
-  -> (DELETE ) /api/note/123
+  -> (GET) /api/notes -      /api/getall.php
+  -> (GET) /api/note/123 -   /api/get.php?id=123
+  -> (POST) /api/note -      /api/insert.php (id, Title, Body)
+  -> (PUT) /api/note/123     /api/update.php (id, Title, Body)
+  -> (DELETE ) /api/note/123 /api/delete.php (id)
